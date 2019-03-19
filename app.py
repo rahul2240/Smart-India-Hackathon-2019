@@ -94,7 +94,11 @@ def predict():
     return jsonify(
               predict=predict)
 
-
+@app.route('/train', methods=['GET'])
+def train_spam():
+    data = pandas.read_csv('spam.csv', encoding='latin-1')
+    train_data = data[:4400] # 4400 items
+    test_data = data[4400:] # 1172 items
 
 
 @app.errorhandler(404)
