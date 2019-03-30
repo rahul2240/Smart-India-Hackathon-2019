@@ -9,3 +9,5 @@ This repo contains code for:
 4. Sentiment Analysis
 
 Rest of the code is here (Backend and Frontend): https://github.com/Rohit599/SIH19 
+
+sihml: Data collection and training model
